@@ -1,0 +1,32 @@
+<ion-menu [content]="nav">
+  <ion-header style="height: 30%; background-color: #428bca;">
+    <ion-footer style="box-shadow: none; border-top: none; background-color: #428bca;" no-border>
+        <ion-title>
+        <div style="display: flex;">
+            <ion-icon style="font-size: 300%; color: white; margin-top: 10px; margin-left: 10px;" name="contact"></ion-icon>
+            <div>
+                <h3 style="color: white; font-size: 18px; margin-left: 10px;">Username<br>username@gmail.com</h3>
+            </div>
+        </div>
+        </ion-title>
+    </ion-footer>
+  </ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item>
+                <ion-label><ion-icon name="list"></ion-icon>  Catégorie</ion-label>
+            </button>
+            <button ion-item>
+                
+                <ion-label><ion-icon name="person"></ion-icon>  Profil</ion-label>
+            </button>
+            <button ion-item>
+               
+                <ion-label><ion-icon name="exit"></ion-icon>  Déconnexion</ion-label>
+            </button>
+          
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #nav [swipeBackEnabled]="false"></ion-nav>

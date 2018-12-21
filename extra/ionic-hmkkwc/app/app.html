@@ -1,0 +1,22 @@
+<ion-menu [content]="nav">
+  
+    <ion-content>
+        <ion-list>
+            <button ion-item (click)="OnHomeClicked()">
+               
+                <ion-label>Home</ion-label>
+            </button>
+            <button ion-item (click)="OnManagementClicked()">
+                
+                <ion-label>Manage</ion-label>
+            </button>
+            <button ion-item (click)="OnRealisationClicked()">
+               
+                <ion-label>Real NOTABS</ion-label>
+            </button>
+          
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #nav [swipeBackEnabled]="false"></ion-nav>

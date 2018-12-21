@@ -1,0 +1,33 @@
+<ion-header id="head">
+
+  <ion-navbar transparent>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h1 padding center text-center>Foire de Kram</h1>
+	<p padding center text-center>Vous êtes visiteur
+Vous êtes professionnel ou vous faites partie du grand public,
+Vous souhaitez visiter un des salons dont nous assurons l’organisation ou que nous accueillons au sein de notre site,
+l’agenda du Parc des Expositions de Tunis vous propose chaque année une programmation variée et de choix pour tous : salons professionnels, salons grand public, expos-vente, congrès, séminaires, spectacles…<br></p>
+
+<ion-list>
+	<ion-item>
+		<h3><ion-icon name="call" color="primary"></ion-icon> 71 973 111</h3>
+	</ion-item>
+	<ion-item (click)="goCarte()">
+		<h3><ion-icon name="map" color="primary"></ion-icon> Carte</h3>
+	</ion-item>
+	<ion-item (click)="goStand()">
+		<h3><ion-icon name="image" color="primary"></ion-icon> Stand</h3>
+	</ion-item>
+	<ion-item (click)="goMap()">
+		<h3><ion-icon name="pin" color="primary"></ion-icon> Location</h3>
+	</ion-item>
+</ion-list>
+</ion-content>
+
